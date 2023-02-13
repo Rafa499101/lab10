@@ -497,6 +497,8 @@ In this task, you will restore a file from the Azure virtual machine-level snaps
 
 2. On the **az104-10-rsv1** Recovery Services vault blade, in the **Protected items** section, click **Backup items**.
 
+   ![](img/img72.PNG)
+
 3. On the **az104-10-rsv1 - Backup items** blade, click **Azure Backup Agent**.
 
 4. On the **Backup Items (Azure Backup Agent)** blade, click the entry representing the backup of **az104-10-vm1**.
@@ -517,15 +519,21 @@ In this task, you will restore a file from the Azure virtual machine-level snaps
 
    > **Note**: Make sure to include the trailing period when typing the server name
 
+   ![](img/img73.PNG)
+
 9. Enable the checkbox next to the label **There is backup data of 1 backup items associated with this server. I understand that clicking “Confirm” will permanently delete all the cloud backup data. This action cannot be undone. An alert may be sent to the administrators of this subscription notifying them of this deletion** and click **Delete**.
 
    > **Note**: This will fail because the **Soft delete** feature must be disabled.
+
+   ![](img/img74.PNG)
 
 10. Navigate back to the **az104-10-rsv1 - Backup items** blade and click **Azure Virtual Machines**.
 
 11. On the **az104-10-rsv1 - Backup items** blade, click **Azure Virtual Machine**.
 
 12. On the **Backup Items (Azure Virtual Machine)** blade, select **View details** for **az104-10-vm0**.
+
+    ![](img/img75.PNG)
 
 13. On the **az104-10-vm0** Backup Item blade, click **Stop backup**.
 
@@ -537,6 +545,8 @@ In this task, you will restore a file from the Azure virtual machine-level snaps
     | Reason                       | **Others**       |
     | Comments                     | **az104 10 lab** |
 
+    ![](img/img76.PNG)
+
 15. Navigate back to the **az104-10-rsv1 - Backup items** blade and click **Refresh**.
 
     > **Note**: The **Azure Virtual Machine** entry is still lists **1** backup item.
@@ -547,9 +557,13 @@ In this task, you will restore a file from the Azure virtual machine-level snaps
 
     > **Note**: This functionality is provided by the soft-delete feature, which is, by default, enabled for Azure virtual machine backups.
 
+    ![](img/img78.PNG)
+
 18. Navigate back to the **az104-10-rsv1** Recovery Services vault blade, and in the **Settings** section, click **Properties**.
 
 19. On the **az104-10-rsv1 - Properties** blade, click the **Update** link under **Security Settings** label.
+
+    ![](img/img79.PNG)
 
 20. On the **Security Settings** blade, Disable **Soft Delete (For workloads running in Azure)** and also disable **Security Features (For workloads running on-premises)** and click **Save**.
 
@@ -559,9 +573,13 @@ In this task, you will restore a file from the Azure virtual machine-level snaps
 
 22. Navigate back to the **az104-10-vm0** Backup Item blade and click **Undelete**.
 
+    ![](img/img80.PNG)
+
 23. On the **Undelete az104-10-vm0** blade, click **Undelete**.
 
 24. Wait for the undelete operation to complete, refresh the web browser page, if needed, navigate back to the **az104-10-vm0** Backup Item blade, and click **Delete backup data**.
+
+    ![](img/img82.PNG)
 
 25. On the **Delete Backup Data** blade, specify the following settings and click **Delete**:
 
@@ -571,6 +589,12 @@ In this task, you will restore a file from the Azure virtual machine-level snaps
     | Reason                       | **Others**       |
     | Comments                     | **az104 10 lab** |
 
+    ![](img/img83.PNG)
+
+    ![](img/img84.PNG)
+
 26. Repeat the steps at the beginning of this task to delete the backup items for **az104-10-vm1**.
+
+    ![](img/img85.PNG)
 
 #### Clean up resources
